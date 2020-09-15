@@ -25,10 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c17a0c7-4d6e-47fb-9011-f64f0e6e6422" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Header.tsx" afterDir="false" />
     </list>
@@ -73,7 +73,7 @@
       <workItem from="1599735529230" duration="162000" />
       <workItem from="1599740490950" duration="1224000" />
       <workItem from="1599837712039" duration="2470000" />
-      <workItem from="1600153010750" duration="8114000" />
+      <workItem from="1600153010750" duration="16857000" />
     </task>
     <servers />
   </component>
@@ -92,6 +92,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600172873209">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1600172873209" />
     <state x="421" y="90" key="FileChooserDialogImpl" timestamp="1599735689444">
       <screen x="0" y="0" width="1280" height="689" />
     </state>

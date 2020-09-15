@@ -1,4 +1,4 @@
-.BackgroundFooter{
+.Background{
     margin: 0;
     background-color: var(--sec-orange-color);
     padding: 0 50px;
@@ -13,7 +13,7 @@
 }
 
 .Nav{
-    width: 100%;
+    width: 60%;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -24,6 +24,11 @@
 .NavButton{
     font-family: 'Roboto', sans-serif;
     font-size: var(--font-tiny);
+    background-color: var(--sec-purple-color);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    height: 30px;
 }
 
 .Headline{
@@ -34,3 +39,5 @@
     flex-basis: 100%;
     height: 0;
 }
+
+

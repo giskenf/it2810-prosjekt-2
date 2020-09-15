@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import './index.css';
 
+
 export class App extends React.Component {
   render() {
     return (
@@ -14,6 +15,7 @@ export class App extends React.Component {
         </>
     );
   }
+
 }
 
 export default App;
