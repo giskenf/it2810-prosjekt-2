@@ -3,6 +3,8 @@ import './App.css';
 import React from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import {Middlepage} from './components/Middlepage';
+import{Art} from './components/Art';
 import './index.css';
 
 
@@ -11,6 +13,7 @@ export class App extends React.Component {
     return (
         <>
           <Header />
+          <Middlepage/>
           <Footer />
         </>
     );

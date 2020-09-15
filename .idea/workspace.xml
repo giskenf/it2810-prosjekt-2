@@ -13,11 +13,6 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:my-app" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
@@ -25,12 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c17a0c7-4d6e-47fb-9011-f64f0e6e6422" name="Default Changelist" comment="">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Footer.tsx" afterDir="false" />
+>>>>>>> cdbcfbb8094996fe574be5d585564ba73ab1bba6
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Header.tsx" afterDir="false" />
+>>>>>>> 68bdcda7cee4cb4aa6da8fc5a41ccbb69ae00c0c
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +94,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600172873209">
