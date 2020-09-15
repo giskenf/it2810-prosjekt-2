@@ -5,7 +5,17 @@ export const Header: React.FC = () => {
     return (
        <>
            <div className = "Background" >
-                <div className = "NavArea"></div>
+               <div className = "NavArea">
+                    <a className = "Logo" >Tittel</a>
+                   <div className="break"></div>
+                    <nav className="Nav">
+                        <a className="NavButton">Test</a>
+                        <a className="NavButton">Test</a>
+                        <a className="NavButton">Test</a>
+                        <a className="NavButton">Test</a>
+                        <a className="NavButton">Test</a>
+                    </nav>
+               </div>
            </div>
        </>
 );
