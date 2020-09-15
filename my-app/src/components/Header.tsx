@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'
+import {TabsBar} from "./TabsBar";
 
 
 export const Header: React.FC = () => {
@@ -8,13 +9,9 @@ export const Header: React.FC = () => {
            <div className = "Background" >
                <div className = "NavArea">
                     <a className = "Logo" >Tittel</a>
-                   <div className="break"></div>
+                    <div className="break"></div>
                     <nav className="Nav">
-                        <button className="NavButton">Test</button>
-                        <button className="NavButton">Test</button>
-                        <button className="NavButton">Test</button>
-                        <button className="NavButton">Test</button>
-                        <button className="NavButton">Test</button>
+                        <TabsBar/>
                     </nav>
                </div>
            </div>

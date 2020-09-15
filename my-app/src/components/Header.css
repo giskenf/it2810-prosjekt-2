@@ -21,15 +21,6 @@
     margin: 0;
 }
 
-.NavButton{
-    font-family: 'Roboto', sans-serif;
-    font-size: var(--font-tiny);
-    background-color: var(--sec-purple-color);
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    height: 30px;
-}
 
 .Headline{
     width: 100%;
