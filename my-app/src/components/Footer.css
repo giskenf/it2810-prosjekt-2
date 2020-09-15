@@ -1,0 +1,6 @@
+.Background{
+    margin: 0;
+    background-color: var(--sec-purple-color);
+    padding: 0 50px;
+    color: white;
+}

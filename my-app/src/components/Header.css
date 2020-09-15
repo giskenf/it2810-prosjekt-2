@@ -1,6 +1,6 @@
-.Background{
+.BackgroundFooter{
     margin: 0;
-    background-color: var(--sec-purple-color);
+    background-color: var(--sec-orange-color);
     padding: 0 50px;
     color: white;
 }
@@ -10,4 +10,27 @@
     padding: 50px 0;
     display: flex;
     flex-direction: row;
+}
+
+.Nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.NavButton{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-tiny);
+}
+
+.Headline{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
 }
