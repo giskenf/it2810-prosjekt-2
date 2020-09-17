@@ -58,7 +58,7 @@ export const Poems: React.FC<{}> = () => {
             {service.status === 'loading' && <div>Loading...</div>}
             {service.status ==='loaded' && <div>{service.payload}</div>}
             {service.status === 'error' && (
-                <div>Error, the backend moved to the dark side.</div>
+                <div>Error, ERRROR</div>
             )}
         </div>
     )
