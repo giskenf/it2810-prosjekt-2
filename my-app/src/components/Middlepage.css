@@ -4,13 +4,11 @@
     flex-display: row;
 }
 
-
 .Picture{
     grid-row: 1/3;
 }
 
 .Text{
-
     grid-row-start: 1;
     grid-row-end: 3;
 }
@@ -25,5 +23,12 @@
     }
 }
 
+#animals {
+    transition: 4s;
+    transform-origin: 40% 40%;
 
-    
+}
+
+#animals:hover{
+    transform: rotate(360deg);
+}

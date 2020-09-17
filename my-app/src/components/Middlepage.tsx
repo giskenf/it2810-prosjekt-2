@@ -11,8 +11,8 @@ export const Middlepage: React.FC = () => {
     return(
     <>
             <div className="Middlepage">
-                <div className="Picture">
-                    <Bear height={200} width={200} color={"red"}/>
+                <div id="animals" className="Picture" >
+                    <Bear height={50} />
                     <Fox height={50}/>
                 </div>
                 <div className="Kol2">
