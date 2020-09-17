@@ -1,0 +1,28 @@
+.BackgroundFooter{
+    margin: 0;
+    background-color: var(--sec-purple-color);
+    padding: 0 50px;
+    color: white;
+}
+
+
+.radioButtonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.radioButtons {
+    margin: 1%;
+    display: grid;
+    flex: 1;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-self: stretch;
+    justify-self: stretch;
+    min-width: 100px;
+    color: white;
+    font-family: "Candara Light";
+}
+
+
+
