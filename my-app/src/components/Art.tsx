@@ -5,8 +5,9 @@ import "./Art.css";
 export const Art: React.FC = () => {
     return(
         <>
-            <div className="Art">Overskrift</div>
+            <div className="Art">BILDE</div>
         </>
     );
-
 };
+
+
