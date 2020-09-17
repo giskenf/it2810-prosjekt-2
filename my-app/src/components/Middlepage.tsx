@@ -1,39 +1,27 @@
 import React from "react";
 import "./Middlepage.css";
-<<<<<<< HEAD
 import {Art} from './Art';
+import { Fox, Bear } from './SVGComponent';
 import {Poems} from './Text';
-=======
-import {Art} from "./Art";
->>>>>>> 7f4922ed96168841b59d8de98c02712b7e976351
 
 
 
 export const Middlepage: React.FC = () => {
 
     return(
-<<<<<<< HEAD
     <>
             <div className="Middlepage">
                 <div className="Picture">
-                    <Art/>
+                    <Bear height={200} width={200} color={"red"}/>
+                    <Fox height={50}/>
                 </div>
-                <div className="Text"/>
-                    <Poems/>
-                <div className="Music">MUSIKK</div>
+                <div className="Kol2">
+                    <div className="Text"/>
+                        <Poems/>
+                    <div className="Music">MUSIKK</div>
+                </div>
             </div>
     </>
-=======
-        <>
-        <div className="Middlepage">
-            <div className="Picture">BILDE 1
-                <Art/>
-            </div>
-            <div className="Text">TEKST</div>
-            <div className="Music">MUSIKK</div>
-        </div>
-        </>
->>>>>>> 7f4922ed96168841b59d8de98c02712b7e976351
     );
 
 }

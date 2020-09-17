@@ -1,14 +1,19 @@
 .Middlepage {
     background-color: var(--third-turquoise-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-display: row;
 }
 
+
 .Picture{
+    grid-row: 1/3;
+}
+
+.Text{
+
     grid-row-start: 1;
     grid-row-end: 3;
 }
-
 
 /*For mobilskjerm*/
 @media only screen and (max-width: 600px) {
