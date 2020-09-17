@@ -4,28 +4,20 @@ import React from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import {Middlepage} from './components/Middlepage';
-<<<<<<< HEAD
 import './index.css';
+import {Context} from './Context';
 
-
-
-=======
-import{Art} from './components/Art';
-import {TabsBar} from './components/TabsBar';
-import './index.css';
-
->>>>>>> 7f4922ed96168841b59d8de98c02712b7e976351
-export class App extends React.Component {
-  render() {
+export function App(){
     return (
         <>
+            <Context.Provider value={null}>
             <Header>
             </Header>
-          <Middlepage/>
-          <Footer/>
+            <Middlepage/>
+            <Footer/>
+            </Context.Provider>
         </>
     );
-  }
 
 }
 

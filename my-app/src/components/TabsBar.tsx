@@ -1,34 +1,34 @@
-import React, { Component, MouseEvent } from 'react';
+import React, {useState, useContext} from "react";
 import './TabsBar.css';
+import {Art} from './Art';
 
-export class TabsBar extends Component {
 
-    constructor(props: any) {
-        super(props);
-        this.state = {
-            id: 0,
-            src: 0,
-        };
+export function TabsBar(props: any){
+    const [selectedOption, setSelectOption] = useState("image2")
+
+    function handleClick(e: any){
+        setSelectOption(e.target.value);
     }
+    console.log(selectedOption)
 
-    /*handleClick(event: MouseEvent) {
-        event.preventDefault();
-        //alert(event.currentTarget.id); // alerts BUTTON
-        let id = event.currentTarget.id;
+    return(
+        <>
+        <button className="NavButton" onChange={(e) =>
+            handleClick(e)} value="image1" >1</button>
+        <button className="NavButton"  onChange={(e) =>
+            handleClick(e)} value="image2" >2</button>
+        <button className="NavButton" onChange={(e) =>
+            handleClick(e)} value="image3" >3</button>
+        <button className="NavButton" onChange={(e) =>
+                handleClick(e)} value="image4" >4</button>
+        <button className="NavButton" onChange={(e) =>
+                handleClick(e)} value="image5" >5</button>
+        </>
+        )
 
-    }*/
-
-    render() {
-        return(
-            <>
-            <button className= "NavButton" onClick={() => this.setState({id: "1", src:"hei"})}>1</button>
-            <button id = "Art2" className="NavButton" >2</button>
-            <button id = "Art3" className="NavButton" >3</button>
-            <button id = "Art4" className="NavButton" >4</button>
-            <button id = "Art5" className="NavButton" >4</button>
-            {this.props.children}
-            </>
-        );
-    }
 }
+/*<button id = "Art2" className="NavButton" >2</button>
+    <button id = "Art3" className="NavButton" >3</button>
+    <button id = "Art4" className="NavButton" >4</button>
+    <button id = "Art5" className="NavButton" >4</button>*/
 
