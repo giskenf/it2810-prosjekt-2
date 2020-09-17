@@ -7,7 +7,6 @@ import {Poems} from './Text';
 
 
 export const Middlepage: React.FC = () => {
-
     return(
     <>
             <div className="Middlepage">
@@ -24,4 +23,4 @@ export const Middlepage: React.FC = () => {
     </>
     );
 
-}
+};

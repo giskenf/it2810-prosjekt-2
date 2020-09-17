@@ -17,6 +17,5 @@ export const Art = (props: Props) => {
             </div>
         </>
     );
+
 };
-
-
