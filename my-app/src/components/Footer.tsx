@@ -8,13 +8,7 @@ export const Footer: React.FC = () => {
                 <div className = "NavArea">
                     <div className="break"></div>
                     <nav className="Nav">
-                        <label>
-                        <div className ="radioButtonsContainer">
-                            <div className="radioButtons">
-                                <input type="radio" ></input>
-                            </div>
-                        </div>
-                        </label>
+
                     </nav>
                 </div>
             </div>

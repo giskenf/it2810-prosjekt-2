@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'
+import RadioButton from "./RadioButton";
 
 
 export const Header: React.FC = () => {
@@ -9,6 +10,7 @@ export const Header: React.FC = () => {
                <div className = "NavArea">
                     <a className = "Logo" >Tittel</a>
                    <div className="break"></div>
+                    <RadioButton/>
                     <nav className="Nav">
                         <button className="NavButton">Test</button>
                         <button className="NavButton">Test</button>
