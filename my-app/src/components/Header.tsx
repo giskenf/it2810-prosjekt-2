@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import RadioButton from "./RadioButton";
+import {RadioButton} from "./RadioButton";
 
 
 export const Header: React.FC = () => {
