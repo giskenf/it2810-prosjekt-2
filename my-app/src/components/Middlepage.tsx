@@ -3,6 +3,7 @@ import "./Middlepage.css";
 import {Art} from './Art';
 import {Frame, Fox, Bear, Frame_underwater, Frame_space} from './SVGComponent';
 import {Poems} from './Text';
+import {Sound} from "./Sound";
 
 
 
@@ -21,7 +22,7 @@ export const Middlepage: React.FC = () => {
                 <div className="Kol2">
                     <div className="Text"/>
                         <Poems/>
-                    <div className="Music">MUSIKK</div>
+                        <Sound/>
                 </div>
             </div>
     </>
