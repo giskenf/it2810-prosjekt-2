@@ -1,8 +1,8 @@
 import React from "react";
 import "./Middlepage.css";
 import {Art} from './Art';
-import { Fox, Bear } from './SVGComponent';
 import {Poems} from './Text';
+import {Sound} from "./Sound";
 
 
 
@@ -11,13 +11,12 @@ export const Middlepage: React.FC = () => {
     <>
             <div className="Middlepage">
                 <div id="animals" className="Picture" >
-                    <Bear height={50} />
-                    <Fox height={50}/>
+                    <Art/>
                 </div>
                 <div className="Kol2">
                     <div className="Text"/>
                         <Poems/>
-                    <div className="Music">MUSIKK</div>
+                        <Sound/>
                 </div>
             </div>
     </>
