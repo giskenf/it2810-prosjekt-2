@@ -7,7 +7,7 @@ import {Middlepage} from './components/Middlepage';
 import './index.css';
 import {Context} from './Context';
 
-export function App(){
+function App(){
     return (
         <>
             <Context.Provider value={null}>
