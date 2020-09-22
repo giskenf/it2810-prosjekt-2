@@ -1,11 +1,11 @@
 .Middlepage {
     background-color: var(--third-turquoise-color);
     display: flex;
-    flex-display: row;
+    flex-direction: row;
 }
 
 .Picture{
-    grid-row: 1/3;
+    grid-row: 1/2;
 }
 
 .Text{
@@ -20,6 +20,9 @@
         flex-direction: column;
         flex-wrap: wrap;
         background-color: yellow;
+    }
+    .Art{
+        max-height: 305px;
     }
 }
 

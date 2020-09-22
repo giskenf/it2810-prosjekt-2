@@ -39,7 +39,7 @@ const usePoetryDB = () => {
     useEffect(() => {
         fetch('https://poetrydb.org/author,title/Shakespeare;Sonnet')
             .then(response => response.json())
-            .then(response => response.forEach((poem: any) => setResult({status: 'loaded', payload: poem.lines})))
+            .then(response => response.forEach((poem: any) => setResult({status: 'loaded', payload: poem.lines[0]})))
             .catch(error => setResult({ status: 'error', error }));
     }, []);
 
