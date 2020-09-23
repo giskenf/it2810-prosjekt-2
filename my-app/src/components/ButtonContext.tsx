@@ -1,20 +1,30 @@
-import React, {useState, createContext} from 'react';
+import React, {createContext} from 'react';
 
-export const ButtonContext = createContext({selectedOption: 'art1'});
+/*
+interface IState {
+    selectedOption: String;
+}
 
-export const ButtonProvider = (props: any) =>{
+
+
+const initialState: String = {
+    selectedOption: 'art1'
+}
+
+ */
+
+export const ButtonContext = createContext<any>({selectedOption: 'art1'});
+/*
+export function ButtonProvider(props: any){
 
    const [selectedOption, setSelectedOption] = useState(ButtonContext)
 
   return(
-       <ButtonProvider value={[selectedOption, setSelectedOption]}> {props.children} </ButtonProvider>
+       <ButtonProvider value={{selectedOption, setSelectedOption}}> {props.children} </ButtonProvider>
    )
-
-
-
-
-
 }
+ */
+
 
 
 

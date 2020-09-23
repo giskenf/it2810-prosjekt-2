@@ -12,13 +12,14 @@ import './index.css';
 import {ButtonContext} from "./components/ButtonContext";
 
 function App() {
-    const buttonContext = useContext(ButtonContext);
-
+    const [selectedOption, setSelectedOption] = useState("art1")
+    const [value, setValue] = useState("noeannet")
 
     return (
         <div>
-         <ButtonContext.Provider value={buttonContext}>
-
+            {console.log(selectedOption)}
+         <ButtonContext.Provider value={{selectedOption, setSelectedOption}}>
+             {console.log(setSelectedOption)}
             <Header>
             </Header>
             <Middlepage/>
