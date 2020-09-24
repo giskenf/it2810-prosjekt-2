@@ -13,9 +13,6 @@ interface Props {
 
 export const Middlepage: React.FC = () => {
 
-
-
-
     return(
     <>
             <div className="Middlepage">

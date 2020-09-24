@@ -42,7 +42,7 @@ const usePoetryDB = () => {
             .then(response => response.forEach((poem: any) => setResult({status: 'loaded', payload: poem.lines})))
             .catch(error => setResult({ status: 'error', error }));
     }, []);
-    console.log(result)
+
     return result;
 
 };

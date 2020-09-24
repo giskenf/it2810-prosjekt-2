@@ -4,8 +4,9 @@ import React, {useState, createContext, useContext, ReactNode} from 'react';
 
 export const ButtonContext = createContext<any>({selectedOption:4});
 
+export const ThemeContext = createContext<any>({selectedTheme:1})
 
-
+/*
 export const ButtonProvider = (props: any) =>{
 
     const [selectedOption, setSelectedOption] = useState(ButtonContext)
@@ -15,6 +16,7 @@ export const ButtonProvider = (props: any) =>{
     )
 
 }
+*/
 
 
 

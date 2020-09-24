@@ -1,24 +1,25 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
+import {ButtonContext} from "./ButtonContext";
+
+export function RadioButton(){
 
 
-export default function RadioButton(props: any){
-
-    const [selectedOption, setSelectOption] = useState("image2")
-
+    const {selectedOption, setSelectedOption} = useContext(ButtonContext);
 
     function handleClick(e: any){
-        setSelectOption(e.target.value);
+
     }
     console.log(selectedOption)
 
 
-        return (
-            <div className="radioButtonsContainer">
-               <div className="radioButtons">
-                    <input type="radio" onChange={(e) => handleClick(e)} checked={selectedOption === "image1"} value="image1" name="Natt"/>
-                    <input type="radio" onChange={(e) => handleClick(e)} checked={selectedOption === "image2"} value="image2" name="Dag"/>
-                    <input type="radio" onChange={(e) => handleClick(e)} checked={selectedOption === "image3"} value="image3" name="Skumring"/>
-                </div>
-            </div>)
+    return (
+        <div className="radioButtonsContainer">
+            <div className="radioButtons">
+                <input type="radio" onChange={() => setSelectedOption('nightTheme')} checked={selectedOption === "nightTheme"}/>
+                <input type="radio" onChange={() => setSelectedOption('art2')} checked={selectedOption === "art2"}/>
+                <input type="radio" onChange={() => setSelectedOption('art3')} checked={selectedOption === "art3"}/>
+            </div>
+        </div>)
+
 
 }
