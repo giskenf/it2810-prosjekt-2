@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './Header.css'
 import {TabsBar} from "./TabsBar";
+import {GlobalContext} from "./ButtonContext";
 
 
 
 export const Header: React.FC = () => {
+    const {themeProvider} = useContext(GlobalContext)
     return (
        <>
-           <div className = "Background" >
+           <div className = "Background" id={themeProvider.selectedTheme}>
                <div className = "NavArea">
                     <a className = "Logo" >Tittel</a>
                     <div className="break"></div>

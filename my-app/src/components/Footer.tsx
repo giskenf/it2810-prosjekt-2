@@ -1,24 +1,26 @@
 import React, {useContext, useState} from 'react';
 import './Footer.css'
 import {RadioButton} from './RadioButton'
-import {ButtonContext} from "./ButtonContext";
+import {GlobalContext} from "./ButtonContext";
 
 
 
 
 
 export const Footer: React.FC = () => {
-    const {selectedOption,setSelectedOption} = useContext(ButtonContext)
-    console.log(selectedOption)
+    const {themeProvider} = useContext(GlobalContext)
+
     return (
         <>
-            <div className = "BackgroundFooter" id={selectedOption}>
+            <div className = "BackgroundFooter" id={themeProvider.selectedTheme}>
                 <div className = "NavArea">
                     <div className="break"></div>
                     <nav className="Nav">
                         <RadioButton/>
                     </nav>
                 </div>
+                <div>TEST1</div>
+                <div>TEST2</div>
             </div>
         </>
     );

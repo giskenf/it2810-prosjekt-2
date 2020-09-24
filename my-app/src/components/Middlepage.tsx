@@ -5,6 +5,7 @@ import {Frame, Frame_underwater, Frame_space, Frame_space2,Frame_desert} from '.
 import {Poems} from './Text';
 import {Sound} from "./Sound";
 import {TabsBar} from "./TabsBar";
+import {GlobalContext} from "./ButtonContext";
 
 interface Props {
     id:number
@@ -12,10 +13,11 @@ interface Props {
 
 
 export const Middlepage: React.FC = () => {
+    const{themeProvider} = useContext(GlobalContext)
 
     return(
     <>
-            <div className="Middlepage">
+            <div className="Middlepage" id={themeProvider.selectedTheme}>
 
                 <div className="Picture">
                     <Art/>

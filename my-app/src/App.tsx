@@ -5,7 +5,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import {Middlepage} from './components/Middlepage';
 import './index.css';
-import {ButtonContext,ThemeContext} from "./components/ButtonContext";
+import {ButtonContext, GlobalProvider, ThemeContext} from "./components/ButtonContext";
 
 
 
@@ -15,14 +15,12 @@ function App(){
 
     return (
         <>
-            <ThemeContext.Provider value={{selectedTheme,setSelectedTheme}}>
-            <ButtonContext.Provider value={{selectedOption,setSelectedOption}}>
+            <GlobalProvider>
             <Header>
             </Header>
             <Middlepage/>
             <Footer/>
-            </ButtonContext.Provider>
-            </ThemeContext.Provider>
+            </GlobalProvider>
         </>
     );
 }

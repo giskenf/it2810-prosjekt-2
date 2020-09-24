@@ -1,24 +1,31 @@
 import React, {useContext, useState} from "react";
-import {ButtonContext} from "./ButtonContext";
+import {GlobalContext} from "./ButtonContext";
 
 export function RadioButton(){
 
 
-    const {selectedOption, setSelectedOption} = useContext(ButtonContext);
+    const {themeProvider} = useContext(GlobalContext)
 
     function handleClick(e: any){
 
     }
-    console.log(selectedOption)
+
 
 
     return (
         <div className="radioButtonsContainer">
             <div className="radioButtons">
-                <input type="radio" onChange={() => setSelectedOption('nightTheme')} checked={selectedOption === "nightTheme"}/>
-                <input type="radio" onChange={() => setSelectedOption('art2')} checked={selectedOption === "art2"}/>
-                <input type="radio" onChange={() => setSelectedOption('art3')} checked={selectedOption === "art3"}/>
-            </div>
+                <div>Night
+                    <input type="radio" onChange={() => themeProvider.setSelectedTheme('nightTheme')} checked={themeProvider.selectedTheme === "nightTheme"}/>
+                </div>
+                <div>Day
+                    <input type="radio" onChange={() => themeProvider.setSelectedTheme('dayTheme')} checked={themeProvider.selectedTheme === "dayTheme"}/>
+                </div>
+                <div>Jungle
+                    <input type="radio" onChange={() => themeProvider.setSelectedTheme('jungleTheme')} checked={themeProvider.selectedTheme === "jungleTheme"}/>
+                </div>
+                <button className="NavButton"  onClick={()=>themeProvider.setSelectedTheme(1)} >Reset </button>
+                </div>
         </div>)
 
 

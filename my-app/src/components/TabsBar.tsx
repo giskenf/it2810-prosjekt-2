@@ -1,7 +1,7 @@
 import React, {useState, useContext, useEffect} from "react";
 import './TabsBar.css';
 import {Art} from './Art';
-import {ButtonContext} from "./ButtonContext";
+import {GlobalContext} from "./ButtonContext";
 
 
 interface tabsProps{
@@ -13,16 +13,16 @@ const initialState:tabsProps={
 
 
 export function TabsBar(props: tabsProps){
-    const {selectedOption,setSelectedOption} = useContext(ButtonContext)
+    const {buttonProvider} = useContext(GlobalContext)
 
 
     return(
         <>
-        <button className="NavButton"  onClick={()=>setSelectedOption(1)} >1 </button>
-        <button className="NavButton"  onClick={()=>setSelectedOption(2)} >2 </button>
-        <button className="NavButton"  onClick={()=>setSelectedOption(3)} >3 </button>
-        <button className="NavButton"  onClick={()=>setSelectedOption(4)} >4 </button>
-        <button className="NavButton"  onClick={()=>setSelectedOption(5)} >5 </button>
+        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(1)} >1 </button>
+        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(2)} >2 </button>
+        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(3)} >3 </button>
+        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(4)} >4 </button>
+        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(5)} >5 </button>
 
        {/* <button className="NavButton"  onClick={()=>
             setId("image2")} >2 </button>

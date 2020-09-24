@@ -4,6 +4,16 @@
     padding: 0 50px;
     color: white;
 }
+.Background#nightTheme{
+    background-image: url("../svg/night_sky.jpg");
+}
+.Background#jungleTheme{
+    background-color: greenyellow;;
+}
+.Background#dayTheme{
+    background-color: white;
+}
+
 
 .NavArea{
     margin: 0;
