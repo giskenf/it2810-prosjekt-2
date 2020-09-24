@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Background"
+>
+  <div
+    className="NavArea"
+  >
+    <a
+      className="Logo"
+    >
+      Tittel
+    </a>
+    <div
+      className="break"
+    />
+    <nav
+      className="Nav"
+    >
+      <button
+        className="NavButton"
+        onClick={[Function]}
+      >
+        1 
+      </button>
+      <button
+        className="NavButton"
+        onClick={[Function]}
+      >
+        2 
+      </button>
+      <button
+        className="NavButton"
+        onClick={[Function]}
+      >
+        3 
+      </button>
+      <button
+        className="NavButton"
+        onClick={[Function]}
+      >
+        4 
+      </button>
+      <button
+        className="NavButton"
+        onClick={[Function]}
+      >
+        5 
+      </button>
+    </nav>
+  </div>
+</div>
+`;
