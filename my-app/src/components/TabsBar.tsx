@@ -1,32 +1,45 @@
-import React, {useState, useContext} from "react";
+import React, {useState, useContext, useEffect} from "react";
 import './TabsBar.css';
 import {Art} from './Art';
+import {ButtonContext} from "./ButtonContext";
 
 
-export function TabsBar(props: any){
-    const [id, setId] = useState("image2")
+interface tabsProps{
+    id?:number
+}
+const initialState:tabsProps={
+    id:1
+}
 
-    function handleClick(e: any){
-        setId(e.target.id);
-        alert(e.target.id);
-    }
+
+export function TabsBar(props: tabsProps){
+    const {selectedOption,setSelectedOption} = useContext(ButtonContext)
+
 
     return(
         <>
-        <button id="image1" className="NavButton"  onChange={(e) =>
-           handleClick(e)}>1 </button>
-        <button className="NavButton"  onChange={(e) =>
-            handleClick(e)} value="image2" >2</button>
-        <button className="NavButton" onChange={(e) =>
-            handleClick(e)} value="image3" >3</button>
-        <button className="NavButton" onChange={(e) =>
-                handleClick(e)} value="image4" >4</button>
-        <button className="NavButton" onChange={(e) =>
-                handleClick(e)} value="image5" >5</button>
-        </>
-        )
+        <button className="NavButton"  onClick={()=>setSelectedOption(1)} >1 </button>
+        <button className="NavButton"  onClick={()=>setSelectedOption(2)} >2 </button>
+        <button className="NavButton"  onClick={()=>setSelectedOption(3)} >3 </button>
+        <button className="NavButton"  onClick={()=>setSelectedOption(4)} >4 </button>
+        <button className="NavButton"  onClick={()=>setSelectedOption(5)} >5 </button>
 
+       {/* <button className="NavButton"  onClick={()=>
+            setId("image2")} >2 </button>
+        <button className="NavButton"  onClick={()=>
+            setId("image3")} >3 </button>
+        <button className="NavButton"  onClick={()=>
+            setId("image4")} >4 </button>
+        <button className="NavButton"  onClick={()=>
+            setId("image5")} >5 </button>*/}
+        </>
+
+        )
 }
+
+
+
+
 /*<button id = "Art2" className="NavButton" >2</button>
     <button id = "Art3" className="NavButton" >3</button>
     <button id = "Art4" className="NavButton" >4</button>

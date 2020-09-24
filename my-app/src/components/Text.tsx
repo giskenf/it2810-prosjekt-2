@@ -39,10 +39,10 @@ const usePoetryDB = () => {
     useEffect(() => {
         fetch('https://poetrydb.org/author,title/Shakespeare;Sonnet')
             .then(response => response.json())
-            .then(response => response.forEach((poem: any) => setResult({status: 'loaded', payload: poem.lines[0]})))
+            .then(response => response.forEach((poem: any) => setResult({status: 'loaded', payload: poem.lines})))
             .catch(error => setResult({ status: 'error', error }));
     }, []);
-
+    console.log(result)
     return result;
 
 };
@@ -64,11 +64,3 @@ export const Poems: React.FC<{}> = () => {
     )
 }
 
-/*
-return(
-    <>
-        <div className="Text">
-            TEST
-        </div>
-    </>
-);*/

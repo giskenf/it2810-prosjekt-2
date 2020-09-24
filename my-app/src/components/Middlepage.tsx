@@ -1,22 +1,27 @@
-import React from "react";
+import React, {useContext, useState} from "react";
 import "./Middlepage.css";
 import {Art} from './Art';
-import {Frame, Fox, Bear, Frame_underwater, Frame_space} from './SVGComponent';
+import {Frame, Frame_underwater, Frame_space, Frame_space2,Frame_desert} from './SVGComponent';
 import {Poems} from './Text';
 import {Sound} from "./Sound";
+import {TabsBar} from "./TabsBar";
 
+interface Props {
+    id:number
+}
 
 
 export const Middlepage: React.FC = () => {
+
+
+
+
     return(
     <>
             <div className="Middlepage">
-                {/*<div id="animals" className="Picture" >
-                    <Bear height={50} />
-                    <Fox height={50}/>
-                </div>*/}
+
                 <div className="Picture">
-                    <Frame/>
+                    <Art/>
                 </div>
 
                 <div className="Kol2">
