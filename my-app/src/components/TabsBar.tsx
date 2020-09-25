@@ -2,23 +2,16 @@ import React, {useState, useContext, useEffect} from "react";
 import './TabsBar.css';
 import {GlobalContext} from "./GlobalProvider";
 
-
 interface tabsProps{
-    id?:number
+    id?:number;
 }
-const initialState:tabsProps={
+/*const initialState:tabsProps={
     id:1
-}
+}*/
 
 export function TabsBar(props: tabsProps){
     const {buttonProvider} = useContext(GlobalContext);
-
-    React.useEffect(() => {
-        localStorage.setItem('myValueInLocalStorage', buttonProvider.selectedOption);
-    }, [buttonProvider.selectedOption]);
-    console.log(localStorage.getItem('myValueInLocalStorage'));
-
-
+    localStorage.setItem('myValueInLocalStorage', buttonProvider.selectedOption);
 
     return(
         <>

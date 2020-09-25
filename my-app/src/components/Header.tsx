@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import './Header.css'
 import {TabsBar} from "./TabsBar";
 import {GlobalContext} from "./GlobalProvider";
+import {Store} from "./Store";
 
 
 
@@ -15,6 +16,7 @@ export const Header: React.FC = () => {
                     <div className="break"></div>
                     <nav className="Nav">
                         <TabsBar/>
+                        <Store/>
                     </nav>
                </div>
            </div>
