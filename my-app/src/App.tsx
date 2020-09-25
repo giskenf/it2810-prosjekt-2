@@ -4,6 +4,7 @@ import React, {useContext, useState} from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import {Middlepage} from './components/Middlepage';
+import{Lowerpage} from "./components/Lowerpage";
 import './index.css';
 import {GlobalProvider} from "./components/GlobalProvider";
 
@@ -16,8 +17,7 @@ function App(){
             <GlobalProvider>
             <Header>
             </Header>
-            <Middlepage/>
-            <Footer/>
+            <Lowerpage/>
             </GlobalProvider>
         </>
     );

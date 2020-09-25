@@ -6,16 +6,13 @@ import {GlobalContext} from "./GlobalProvider";
 import {Frame, Frame_desert, Frame_space, Frame_space2, Frame_underwater} from './SVGComponent'
 
 
-
-
 interface ArtProps{
-    id?:number;
+    adding?:(a: number,b: number)=>void;
+    artId?:number;
 }
 
 
 export const Art: React.FC<ArtProps> = (props: ArtProps) => {
-
-    const id = useState(props.id)
 
     const {buttonProvider} = useContext(GlobalContext)
 
@@ -32,4 +29,30 @@ export const Art: React.FC<ArtProps> = (props: ArtProps) => {
     );
 
 };
+
+
+/*interface ArtProps{
+    adding:(a: number,b: number)=>void;
+    artId:number;
+}
+
+
+export const Art: React.FC<ArtProps> = (props: ArtProps) => {
+
+    const {buttonProvider} = useContext(GlobalContext)
+    props.adding(7,5);
+
+    return(
+        <>
+
+            {props.artId===1 && <Frame/>}
+            {props.artId===2 && <Frame_desert/>}
+            {buttonProvider.selectedOption===3 && <Frame_space/>}
+            {buttonProvider.selectedOption===4 && <Frame_underwater/>}
+            {buttonProvider.selectedOption===5 && <Frame_space2/>}
+
+        </>
+    );
+
+};*/
 

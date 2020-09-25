@@ -1,6 +1,13 @@
 import React, {useState, useEffect} from "react";
 import "./Text.css";
 
+interface poemsPros{
+    poemID:number
+    num?: number
+    first?: boolean
+}
+
+
 
 export interface Poem {
     author: string
@@ -29,38 +36,57 @@ export type Service<T> =
 
 export interface Poems{
     results: Poem[]
+
 }
 
-const usePoetryDB = () => {
+export const usePoetryDB = (props:poemsPros) => {
+
     const[result,setResult] = useState<Service<Poems>>({
         status: 'loading'
     })
 
-    useEffect(() => {
+   useEffect(() => {
+
         fetch('https://poetrydb.org/author,title/Shakespeare;Sonnet')
             .then(response => response.json())
             .then(response => response.forEach((poem: any) => setResult({status: 'loaded', payload: poem.lines})))
             .catch(error => setResult({ status: 'error', error }));
     }, []);
-
+    console.log(result)
     return result;
 
 };
-export default usePoetryDB;
 
-export const Poems: React.FC<{}> = () => {
-    const service = usePoetryDB();
+/*
+export const getList: React.FC<poemsPros> = (props:poemsPros) => {
 
+    const service = usePoetryDB(props)
 
     return(
-        <div>
+        Object.values(service)[1]
+    )
+}
+*/
 
+
+
+export const Poems: React.FC<poemsPros> = (props:poemsPros) => {
+
+    const service = usePoetryDB(props)
+    console.log(Object.values(service)[1])
+    return(
+        <div>
+            {props.poemID}
             {service.status === 'loading' && <div>Loading...</div>}
             {service.status ==='loaded' && <div>{service.payload}</div>}
-            {service.status === 'error' && (
-                <div>Error, ERRROR</div>
-            )}
+            {service.status === 'error' && <div>Error, ERRROR</div>}
         </div>
     )
+
+
+    /*useEffect(() =>{
+        usePoetryDB(props)
+    },[props.poemID])
+*/
 }
 

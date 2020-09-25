@@ -1,21 +1,22 @@
 import React, {useContext, useState} from "react";
 import {GlobalContext} from "./GlobalProvider";
 
-export function SongButton(){
+interface ButtonProps{
+    changePoem:(a: number)=>void;
+}
+export function Button(props: ButtonProps){
 
     const {songProvider} = useContext(GlobalContext)
-    /*function handleClick(e: any){
-    }*/
 
     return (
         <div className="radioButtonsContainer">
             <div className="radioButtons">
                 <div>
-                    <input type="radio" onChange={() => songProvider.setSelectedSong('Electronica')} checked={songProvider.selectedSong === "Electronica"}/>
+                    <input type="radio" onChange={() => props.changePoem(2)}/>
                     Electronica
                 </div>
                 <div>
-                    <input type="radio" onChange={() => songProvider.setSelectedSong('Piano')} checked={songProvider.selectedSong === "Piano"}/>
+                    <input type="radio" onChange={() => props.changePoem(5)}/>
                     Piano
                 </div>
                 <div>
