@@ -1,19 +1,11 @@
 import React, {useState, createContext, useContext, ReactNode, useMemo} from 'react';
 
-
-
-export const ButtonContext = createContext<any>({selectedOption:4});
-
-export const ThemeContext = createContext<any>({selectedTheme:1})
-
-export const GlobalContext = createContext<any>(null)
-
-
+export const GlobalContext = createContext<any>(1)
 
 export const GlobalProvider = (props: any) =>{
 
     const [selectedOption, setSelectedOption] = useState(1)
-    const [selectedTheme, setSelectedTheme] = useState(null)
+    const [selectedTheme, setSelectedTheme] = useState(1)
 
     const buttonProvider = useMemo(() => ({
         selectedOption,setSelectedOption}),[selectedOption,setSelectedOption]);

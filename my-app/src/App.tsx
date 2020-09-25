@@ -5,7 +5,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import {Middlepage} from './components/Middlepage';
 import './index.css';
-import {ButtonContext, GlobalProvider, ThemeContext} from "./components/ButtonContext";
+import {GlobalProvider} from "./components/GlobalProvider";
 
 
 

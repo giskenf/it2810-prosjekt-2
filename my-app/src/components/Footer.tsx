@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react';
 import './Footer.css'
 import {RadioButton} from './RadioButton'
-import {GlobalContext} from "./ButtonContext";
+import {GlobalContext} from "./GlobalProvider";
 
 
 

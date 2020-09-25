@@ -1,16 +1,10 @@
 import React, {useContext, useState} from "react";
-import {GlobalContext} from "./ButtonContext";
+import {GlobalContext} from "./GlobalProvider";
 
 export function RadioButton(){
-
-
     const {themeProvider} = useContext(GlobalContext)
-
     function handleClick(e: any){
-
     }
-
-
 
     return (
         <div className="radioButtonsContainer">

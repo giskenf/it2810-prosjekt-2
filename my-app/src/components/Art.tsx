@@ -2,7 +2,7 @@ import React, {useContext, useState} from "react";
 import "./Art.css";
 import fox from '../svg/fox.svg'
 import frame1 from '../svg/Dogforeste.svg'
-import {ButtonContext, GlobalContext, ThemeContext} from "./ButtonContext";
+import {GlobalContext} from "./GlobalProvider";
 import {Frame, Frame_desert, Frame_space, Frame_space2, Frame_underwater} from './SVGComponent'
 
 

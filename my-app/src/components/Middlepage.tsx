@@ -5,7 +5,7 @@ import {Frame, Frame_underwater, Frame_space, Frame_space2,Frame_desert} from '.
 import {Poems} from './Text';
 import {Sound} from "./Sound";
 import {TabsBar} from "./TabsBar";
-import {GlobalContext} from "./ButtonContext";
+import {GlobalContext} from "./GlobalProvider";
 
 interface Props {
     id:number

@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import './Header.css'
 import {TabsBar} from "./TabsBar";
-import {GlobalContext} from "./ButtonContext";
+import {GlobalContext} from "./GlobalProvider";
 
 
 
