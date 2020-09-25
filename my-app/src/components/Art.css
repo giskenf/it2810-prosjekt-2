@@ -1,7 +1,3 @@
-.pictures{
-    display: flex;
-    flex-direction: row;
-}
 
 @keyframes moveBird {
     from{
@@ -65,7 +61,7 @@
 
 #Frame2{
     animation: colourChange 15s linear infinite;
-    animation-delay: 3s;
+
 }
 
 .bubble{

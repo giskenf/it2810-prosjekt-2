@@ -1,7 +1,8 @@
 import React, {useContext, useState} from 'react';
 import './Footer.css'
-import {RadioButton} from './RadioButton'
-import {GlobalContext} from "./ButtonContext";
+import {ThemeButton} from './ThemeButton'
+import {SongButton} from "./SongButton";
+import {GlobalContext} from "./GlobalProvider";
 
 
 
@@ -13,14 +14,13 @@ export const Footer: React.FC = () => {
     return (
         <>
             <div className = "BackgroundFooter" id={themeProvider.selectedTheme}>
-                <div className = "NavArea">
-                    <div className="break"></div>
-                    <nav className="Nav">
-                        <RadioButton/>
-                    </nav>
+                <div >Choose theme
+                   <ThemeButton/>
                 </div>
-                <div>TEST1</div>
-                <div>TEST2</div>
+                <div>Choose song
+                    <SongButton/>
+                </div>
+                <div>Choose poem</div>
             </div>
         </>
     );

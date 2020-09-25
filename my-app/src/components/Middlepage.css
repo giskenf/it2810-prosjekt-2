@@ -2,14 +2,16 @@
     background-color: var(--third-turquoise-color);
     display: flex;
     flex-direction: row;
+
 }
 @viewport {
-    width: 50vw;
-    height: 50vh;
+    width: 40vw;
+    height: 40vh;
 }
 
 .Middlepage#nightTheme{
-    background-image: url("../svg/night_sky.jpg");
+
+    background: linear-gradient(#393939,black );
 }
 .Middlepage#jungleTheme{
     background-color: greenyellow;;
@@ -38,6 +40,7 @@
     }
     .svg{
         max-height: 305px;
+        justify-content: space-around;
     }
 }
 

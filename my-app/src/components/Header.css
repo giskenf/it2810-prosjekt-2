@@ -5,7 +5,9 @@
     color: white;
 }
 .Background#nightTheme{
-    background-image: url("../svg/night_sky.jpg");
+    background-color: #393939 ;
+
+
 }
 .Background#jungleTheme{
     background-color: greenyellow;;

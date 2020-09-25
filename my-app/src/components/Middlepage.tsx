@@ -5,7 +5,7 @@ import {Frame, Frame_underwater, Frame_space, Frame_space2,Frame_desert} from '.
 import {Poems} from './Text';
 import {Sound} from "./Sound";
 import {TabsBar} from "./TabsBar";
-import {GlobalContext} from "./ButtonContext";
+import {GlobalContext} from "./GlobalProvider";
 
 interface Props {
     id:number
@@ -14,6 +14,7 @@ interface Props {
 
 export const Middlepage: React.FC = () => {
     const{themeProvider} = useContext(GlobalContext)
+    const{songProvider} = useContext(GlobalContext)
 
     return(
     <>
@@ -26,6 +27,7 @@ export const Middlepage: React.FC = () => {
                 <div className="Kol2">
                     <div className="Text"/>
                         <Poems/>
+                        <div>{songProvider.selectedSong}</div>
                         <Sound/>
                 </div>
             </div>
