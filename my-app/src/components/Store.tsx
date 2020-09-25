@@ -6,35 +6,40 @@ export function Store(props: any){
     const {buttonProvider} = useContext(GlobalContext);
     const [value, setValue] = useState(false);
     const [value2, setValue2] = useState(false);
-    const [stored,setStored] = useState<string|null>('');
-    const num = Number(stored)
-    localStorage.setItem('item' , buttonProvider.selectedOption)
 
     if (value){
-        setStored(localStorage.getItem('item'));
-        console.log("Favoritt: ", stored);
+        localStorage.setItem('item' , buttonProvider.selectedOption)
         setValue(false);
     }
 
     if (value2){
-        if(num == 0){
+        const item = localStorage.getItem('item');
+        console.log("item: ", item);
+        if(item == null){
             window.alert("Du har ikke valgt en favoritt!");
         }
-        else{
-            //console.log("NUM: ", num);
-            buttonProvider.setSelectedOption(num);
-            }
+        buttonProvider.setSelectedOption(Number(item));
         setValue2(false);
         }
+
+    function removeFav(){
+        localStorage.clear();
+    }
 
 
     return(
         <>
-            <div>Sett som favoritt
-                <button className="NavButton"  value={"Sett som favoritt"} onClick={()=>setValue(true)}/>
+            <div>
+                <button className="StoreButton"  value={"Sett som favoritt"} onClick={()=>setValue(true)}>
+                    Sett som favoritt</button>
             </div>
-            <div>Vis favoritt
-                <button className="NavButton"  value={"Vis favoritt"} onClick={()=>setValue2(true)}/>
+            <div>
+                <button className="StoreButton"  value={"Vis favoritt"} onClick={()=>setValue2(true)}>
+                    Vis favoritt</button>
+            </div>
+            <div>
+                <button className="StoreButton"  value={"Fjern favoritt"} onClick={()=>removeFav()}>
+                    Fjern favoritt</button>
             </div>
         </>
     )

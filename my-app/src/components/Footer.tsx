@@ -1,6 +1,7 @@
 import React, {useContext, useState} from 'react';
 import './Footer.css'
-import {RadioButton} from './RadioButton'
+import {RadioButton} from './RadioButton';
+import {SessionStore} from './SessionStore';
 import {GlobalContext} from "./GlobalProvider";
 
 
@@ -17,6 +18,7 @@ export const Footer: React.FC = () => {
                     <div className="break"></div>
                     <nav className="Nav">
                         <RadioButton/>
+                        <SessionStore/>
                     </nav>
                 </div>
                 <div>TEST1</div>
