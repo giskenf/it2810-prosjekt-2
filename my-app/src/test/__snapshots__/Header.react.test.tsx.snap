@@ -1,54 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="Background"
->
+Array [
+  " ",
   <div
-    className="NavArea"
+    className="BackgroundHeader"
+    id={1}
   >
-    <a
-      className="Logo"
-    >
-      Tittel
-    </a>
     <div
-      className="break"
-    />
-    <nav
-      className="Nav"
+      className="Headline"
     >
+      Museum
+    </div>
+    <button
+      className="NavButton"
+      onClick={[Function]}
+    >
+      1 
+    </button>
+    <button
+      className="NavButton"
+      onClick={[Function]}
+    >
+      2 
+    </button>
+    <button
+      className="NavButton"
+      onClick={[Function]}
+    >
+      3 
+    </button>
+    <button
+      className="NavButton"
+      onClick={[Function]}
+    >
+      4 
+    </button>
+    <button
+      className="NavButton"
+      onClick={[Function]}
+    >
+      5 
+    </button>
+    <div>
       <button
-        className="NavButton"
+        className="StoreButton"
         onClick={[Function]}
+        value="Sett som favoritt"
       >
-        1 
+        Set as favorite
       </button>
       <button
-        className="NavButton"
+        className="StoreButton"
         onClick={[Function]}
+        value="Vis favoritt"
       >
-        2 
+        Show favorite
       </button>
       <button
-        className="NavButton"
+        className="StoreButton"
         onClick={[Function]}
+        value="Fjern favoritt"
       >
-        3 
+        Remove favorite
       </button>
-      <button
-        className="NavButton"
-        onClick={[Function]}
-      >
-        4 
-      </button>
-      <button
-        className="NavButton"
-        onClick={[Function]}
-      >
-        5 
-      </button>
-    </nav>
-  </div>
-</div>
+    </div>
+  </div>,
+  " ",
+]
 `;

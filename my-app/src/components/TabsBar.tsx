@@ -15,11 +15,11 @@ export function TabsBar(props: tabsProps){
 
     return(
         <>
-        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(1)}>1 </button>
-        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(2)} >2 </button>
-        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(3)} >3 </button>
-        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(4)} >4 </button>
-        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(5)} >5 </button>
+        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(1)}>Dog</button>
+        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(2)} >Desert </button>
+        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(3)} >Space </button>
+        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(4)} >Turtle</button>
+        <button className="NavButton"  onClick={()=>buttonProvider.setSelectedOption(5)} >Earth</button>
         </>
         )
 }

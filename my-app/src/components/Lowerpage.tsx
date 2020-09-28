@@ -8,13 +8,13 @@ interface lowerpageProps{
 }
 
 export const Lowerpage= (props: lowerpageProps) =>{
-    const[selectedPoem, setSelectedPoem] = useState(3)
+    const[selectedPoem, setSelectedPoem] = useState(0)
     const[selectedSong, setSelectedSong] = useState("Song")
 
     return(
         <div className="Lowerpage">
             <Middlepage MiddlepageId={selectedPoem}/>
-            <Footer changePoem={setSelectedPoem}/>
+            <Footer changePoem={setSelectedPoem} footerID={selectedPoem}/>
         </div>
     )
 

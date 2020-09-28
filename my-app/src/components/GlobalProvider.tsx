@@ -5,6 +5,7 @@ export const GlobalContext = createContext<any>(1)
 
 export const GlobalProvider = (props: any) =>{
 
+    //Setter tre kontekster for valg av kunst, tema og sang
     const [selectedOption, setSelectedOption] = useState(Math.floor(Math.random()*5)+1)
     const [selectedTheme, setSelectedTheme] = useState(1)
     const [selectedSong,setSelectedSong] = useState("Song")

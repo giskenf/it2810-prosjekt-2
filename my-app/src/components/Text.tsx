@@ -52,43 +52,22 @@ export const usePoetryDB = (props:poemsPros) => {
             .then(response => response.forEach((poem: any) => setResult({status: 'loaded', payload: poem.lines[props.poemID]})))
             .catch(error => setResult({ status: 'error', error }));
     }, [props.poemID]);
-    console.log(result)
     return result;
 
 };
-
-/*
-export const getList: React.FC<poemsPros> = (props:poemsPros) => {
-
-    const service = usePoetryDB(props)
-
-    return(
-        Object.values(service)[1]
-    )
-}
-*/
-
-
 
 export const Poems: React.FC<poemsPros> = (props:poemsPros) => {
 
     const service = usePoetryDB(props)
 
-    return(
+    return (
         <div>
-            {props.poemID}
+
             {service.status === 'loading' && <div>Loading...</div>}
-            {service.status ==='loaded' && <div>{service.payload}</div>}
+            {service.status === 'loaded' && <div>{service.payload}</div>}
             {service.status === 'error' && <div>Error, ERRROR</div>}
         </div>
     )
 
 
-    /*useEffect(() =>{
-        usePoetryDB(props)
-    },[props.poemID])
-*/
 }
-
-
-

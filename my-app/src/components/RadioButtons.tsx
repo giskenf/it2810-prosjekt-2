@@ -7,6 +7,7 @@ export function RadioButton(){
 
     return (
 
+        //Hver knapp henter og endrer staten i konteksten til selectedTheme
         <div className="radioButtonsContainer">
             <div className="radioButtons">
                 <div>Night

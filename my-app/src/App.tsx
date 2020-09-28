@@ -13,6 +13,7 @@ import {GlobalProvider} from "./components/GlobalProvider";
 function App(){
 
     return (
+        //Wrapper hele siden i GlobalProvider for å gjøre states fra kontekstene tilgjengelig for alle komponenter.
         <>
             <GlobalProvider>
                 <Header>

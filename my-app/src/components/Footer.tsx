@@ -8,6 +8,7 @@ import {GlobalContext} from "./GlobalProvider";
 
 interface footerProps{
     changePoem:(a: number)=>void;
+    footerID: number
 }
 
 export const Footer: React.FC<footerProps> = (props: footerProps) => {
@@ -26,7 +27,7 @@ export const Footer: React.FC<footerProps> = (props: footerProps) => {
                     <SongButton/>
                 </div>
                 <div>Choose poem
-                    <Button changePoem={props.changePoem}/>
+                    <Button changePoem={props.changePoem} poemID={props.footerID} />
                 </div>
             </div>
         </>
