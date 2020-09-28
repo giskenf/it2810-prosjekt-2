@@ -5,9 +5,7 @@ import {GlobalContext} from "./GlobalProvider";
 export function ThemeButton(){
 
     const {themeProvider} = useContext(GlobalContext)
-    function handleClick(e: any){
 
-    }
     return (
         <div className="radioButtonsContainer">
             <div className="radioButtons">
@@ -23,7 +21,7 @@ export function ThemeButton(){
                     <input type="radio" onChange={() => themeProvider.setSelectedTheme('jungleTheme')} checked={themeProvider.selectedTheme === "jungleTheme"}/>
                     Jungle
                 </div>
-                <button className="NavButton"  onClick={()=>themeProvider.setSelectedTheme(1)} >Reset </button>
+                <button  onClick={()=>themeProvider.setSelectedTheme(1)} >Reset </button>
             </div>
         </div>)
 

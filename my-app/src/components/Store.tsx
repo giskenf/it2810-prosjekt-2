@@ -30,7 +30,7 @@ export function Store(props: any){
 
 
     return(
-        <>
+        <div>
 
                 <button className="StoreButton"  value={"Sett som favoritt"} onClick={()=>setValue(true)}>
                     Set as favorite</button>
@@ -41,6 +41,6 @@ export function Store(props: any){
                 <button className="StoreButton"  value={"Fjern favoritt"} onClick={()=>removeFav()}>
                     Remove favorite</button>
 
-        </>
+        </div>
     )
 }

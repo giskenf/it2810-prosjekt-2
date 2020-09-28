@@ -22,7 +22,7 @@ export function SongButton(){
                     <input type="radio" onChange={() => songProvider.setSelectedSong('Rock')} checked={songProvider.selectedSong === "Rock"}/>
                     Rock
                 </div>
-                <button className="NavButton"  onClick={()=>songProvider.setSelectedSong('Song')} >Reset </button>
+                <button   onClick={()=>songProvider.setSelectedSong('Song')} >Reset </button>
             </div>
         </div>)
 }

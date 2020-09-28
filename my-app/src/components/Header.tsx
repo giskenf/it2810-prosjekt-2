@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
     const {themeProvider} = useContext(GlobalContext)
     return (
        <>
-           <div className = "Background" id={themeProvider.selectedTheme}>
+           <div className = "BackgroundHeader" id={themeProvider.selectedTheme}>
                <div className = "Headline">Museum</div>
                <TabsBar/>
                <Store/>

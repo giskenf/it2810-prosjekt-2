@@ -1,6 +1,6 @@
 .BackgroundFooter{
     margin: 0;
-    background-color: var(--sec-purple-color);
+    background-color: #333;
     padding: 20px 20px;
     color: white;
     display: flex;
@@ -8,13 +8,14 @@
     justify-content: space-around;
 }
 .BackgroundFooter#nightTheme{
-    background-color: black;
+    background-color: #16213e;
 }
 .BackgroundFooter#jungleTheme{
-    background-image: url("../svg/jungle_1.jpg");
+    background-image: url("../svg/jungle.jpg");
+    color: black;
 }
 .BackgroundFooter#dayTheme{
-    background-color: #61dafb;
+    background-color: #51adcf;
 }
 
 .radioButtonsContainer {
@@ -34,16 +35,21 @@
     color: white;
     font-family: "Candara Light";
 }
-
-.buttons{
+button{
+    background-color: #0278ae;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-size: var(--font-tiny);
-    background-color: var(--sec-orange-color);
     border: none;
-    color: white;
     padding: 10px 10px 0 10px;
-    margin: 3px 3px 3px 3px;
+    margin: 3px auto 3px auto;
     height: 50px;
+    min-width: 125px;
 }
+
+.buttonContainer {
+    display: flex;
+}
+
 
 

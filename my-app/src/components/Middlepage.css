@@ -1,12 +1,18 @@
 .Middlepage {
-    background-color: var(--third-turquoise-color);
+    background-color: #a5ecd7;
     display: flex;
     flex-direction: row;
-    min-width: 320px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Kol2{
+    text-align: center;
 }
 
 .svg{
     width: 40vw;
+    align-self: center;
 }
 
 
@@ -18,20 +24,25 @@
         flex-wrap: wrap;
         background-color: white;
         align-content: center;
+        min-width: 320px;
     }
+
     .svg{
         max-height: 305px;
-        min-width: 250px;
+        min-width: 310px;
         justify-self: center;
         align-self: center;
+        width: 100vw;
     }
 }
 
 .Middlepage#nightTheme{
-    background-image: url("../svg/night_sky.jpg");
+    /*background-image: url("../svg/night_sky.jpg");*/
+    background-color: #1a1a2e;
+    color: white;
 }
 .Middlepage#jungleTheme{
-    background-color: greenyellow;;
+    background-color: #c4fb6d;;
 }
 .Middlepage#dayTheme{
     background-color: white;
