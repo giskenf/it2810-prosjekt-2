@@ -3,7 +3,7 @@ import './Footer.css'
 import {ThemeButton} from './ThemeButton'
 import {SongButton} from "./SongButton";
 import {SessionStore} from "./SessionStore";
-//import {Button} from "./Button"
+import {Button} from "./Button"
 import {GlobalContext} from "./GlobalProvider";
 
 interface footerProps{
