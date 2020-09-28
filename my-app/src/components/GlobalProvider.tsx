@@ -25,8 +25,6 @@ export const GlobalProvider = (props: any) =>{
 
 
 
-
-
 /*export function useButtonContext(){
     return useContext(ButtonContext)
 }

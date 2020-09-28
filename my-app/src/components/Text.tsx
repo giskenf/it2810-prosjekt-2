@@ -57,19 +57,6 @@ export const usePoetryDB = (props:poemsPros) => {
 
 };
 
-/*
-export const getList: React.FC<poemsPros> = (props:poemsPros) => {
-
-    const service = usePoetryDB(props)
-
-    return(
-        Object.values(service)[1]
-    )
-}
-*/
-
-
-
 export const Poems: React.FC<poemsPros> = (props:poemsPros) => {
 
     const service = usePoetryDB(props)
@@ -83,10 +70,5 @@ export const Poems: React.FC<poemsPros> = (props:poemsPros) => {
         </div>
     )
 
-
-    /*useEffect(() =>{
-        usePoetryDB(props)
-    },[props.poemID])
-*/
 }
 

@@ -15,7 +15,7 @@ export const Middlepage: React.FC<MiddlepageProps> = (props:MiddlepageProps) => 
     const{songProvider} = useContext(GlobalContext)
 
     return(
-    <>
+        <>
             <div className="Middlepage" id={themeProvider.selectedTheme}>
 
                 <div className="Picture">
@@ -29,41 +29,11 @@ export const Middlepage: React.FC<MiddlepageProps> = (props:MiddlepageProps) => 
                         <Sound/>
                 </div>
             </div>
-    </>
+        </>
     );
 
 };
 
 
-/*
-interface Props {
-    id:number
-}
 
 
-export const Middlepage: React.FC = () => {
-    const{themeProvider} = useContext(GlobalContext)
-    const{songProvider} = useContext(GlobalContext)
-    function noerart(a:number,b:number): void{
-        a+b
-    }
-    return(
-        <>
-            <div className="Middlepage" id={themeProvider.selectedTheme}>
-
-                <div className="Picture">
-                    <Art artId={1} adding={noerart}/>
-                </div>
-
-
-                <div className="Kol2">
-                    <div className="Text"/>
-                    <Poems/>
-                    <div>{songProvider.selectedSong}</div>
-                    <Sound/>
-                </div>
-            </div>
-        </>
-    );
-
-};*/

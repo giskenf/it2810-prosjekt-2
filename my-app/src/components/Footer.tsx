@@ -2,6 +2,8 @@ import React, {useContext, useState} from 'react';
 import './Footer.css'
 import {ThemeButton} from './ThemeButton'
 import {SongButton} from "./SongButton";
+
+import {SessionStore} from "./SessionStore";
 import {Button} from "./Button"
 import {GlobalContext} from "./GlobalProvider";
 
@@ -23,6 +25,9 @@ export const Footer: React.FC<footerProps> = (props: footerProps) => {
                 </div>
                 <div>Choose poem
                     <Button changePoem={props.changePoem}/>
+                </div>
+                <div>Choose combination
+                    <SessionStore/>
                 </div>
             </div>
         </>
