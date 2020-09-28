@@ -4,12 +4,16 @@ import {Art} from './Art';
 import {Frame, Frame_underwater, Frame_space, Frame_space2,Frame_desert} from './SVGComponent';
 import {Poems} from './Text';
 import {Sound} from "./Sound";
-import {TabsBar} from "./TabsBar";
 import {GlobalContext} from "./GlobalProvider";
 
 interface MiddlepageProps {
     MiddlepageId:number
 }
+
+/*Midterste del av siden, med elemntene Art, Poem og Sound*/
+/*Benytter context for å vise sang og ulike bilder. Komponenthierarki brukes for å sende ulike
+* verdier og funksjoner forbundet med endring av tekst.*/
+
 export const Middlepage: React.FC<MiddlepageProps> = (props:MiddlepageProps) => {
     const{themeProvider} = useContext(GlobalContext)
     const{songProvider} = useContext(GlobalContext)

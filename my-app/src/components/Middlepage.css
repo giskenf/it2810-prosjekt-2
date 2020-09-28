@@ -36,8 +36,9 @@
     }
 }
 
+/*Hvert "Theme" har en id. Endrer bakgrunnsbildet etter id'en til klassen Middlepage */
+
 .Middlepage#nightTheme{
-    /*background-image: url("../svg/night_sky.jpg");*/
     background-color: #1a1a2e;
     color: white;
 }

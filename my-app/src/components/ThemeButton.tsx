@@ -1,7 +1,7 @@
-
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import {GlobalContext} from "./GlobalProvider";
 
+/*Endrer tema med funksjonen setSelectedTheme*/
 export function ThemeButton(){
 
     const {themeProvider} = useContext(GlobalContext)

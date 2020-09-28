@@ -4,10 +4,7 @@ import "./Text.css";
 interface poemsPros{
     poemID:number
     num?: number
-    first?: boolean
 }
-
-
 
 export interface Poem {
     author: string
@@ -39,6 +36,9 @@ export interface Poems{
 
 }
 
+/*Henter ut tekst baser på props.poemID
+* Dersom verdien endres vil nytt dikt hentes*/
+
 export const usePoetryDB = (props:poemsPros) => {
 
     const[result,setResult] = useState<Service<Poems>>({
@@ -56,13 +56,15 @@ export const usePoetryDB = (props:poemsPros) => {
 
 };
 
+/*Funksjon som kaller på usePoetryDB,
+* som henter tekst.*/
+
 export const Poems: React.FC<poemsPros> = (props:poemsPros) => {
 
     const service = usePoetryDB(props)
 
     return (
         <div>
-
             {service.status === 'loading' && <div>Loading...</div>}
             {service.status === 'loaded' && <div>{service.payload}</div>}
             {service.status === 'error' && <div>Error, ERRROR</div>}

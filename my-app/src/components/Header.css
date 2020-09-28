@@ -1,6 +1,5 @@
 .BackgroundHeader{
     margin: 0;
-    /*background-color: var(--sec-orange-color);*/
     background-color: #0278ae;
     padding: 50px 50px;
     color: white;
@@ -9,8 +8,9 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+/*Endrer bakgrunnen i Header etter, bruker context-verdi for å endre farge*/
 .BackgroundHeader#nightTheme{
-    /*background-image: url("../svg/night_sky.jpg");*/
     background-color: black;
 }
 .BackgroundHeader#jungleTheme{
@@ -21,20 +21,11 @@
 }
 
 
+
 .NavArea{
     margin: 0;
     padding: 50px 0;
 }
-
-/*
-.Nav{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-}*/
 
 .Headline{
     font-family: 'Roboto', sans-serif;
@@ -43,10 +34,6 @@
     text-align: center;
     padding: 0px 10px 50px 0px;
 }
-/*.break {
-    flex-basis: 100%;
-    height: 0;
-}*/
 
 .StoreButton{
     font-family: 'Roboto', sans-serif;
@@ -61,17 +48,7 @@
     cursor:pointer;
 }
 
-
-.Background#nightTheme{
-    background-image: url("../svg/night_sky.jpg");
-}
-.Background#jungleTheme{
-    background-color: greenyellow;;
-}
-.Background#dayTheme{
-    background-color: white;
-}
-
+/*For mobilskjerm*/
 @media only screen and (max-width: 600px) {
    .Background{
        padding: 25px 0;

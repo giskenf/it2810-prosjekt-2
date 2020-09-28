@@ -1,13 +1,12 @@
-import React, {useContext, useState} from "react";
-import {GlobalContext} from "./GlobalProvider";
+import React from "react";
 
 interface ButtonProps{
     changePoem:(a: number)=>void;
     poemID: number;
 }
-export function Button(props: ButtonProps){
+/*Bruker her props og states for å endre tekst(Poem).*/
 
-    const {songProvider} = useContext(GlobalContext)
+export function Button(props: ButtonProps){
 
     return (
         <div className="radioButtonsContainer">

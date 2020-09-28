@@ -1,15 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Art.css";
 
-interface Props{
-    height?: number
-    width?: number
-    color?: string
-    id?: number
-}
+/*Hver funksjon exporterer et bilde*/
 
-
-export const Frame = (props: Props) => {
+export const Frame = () => {
 
     return(
 
@@ -158,7 +152,7 @@ export const Frame = (props: Props) => {
     );
 };
 
-export const Frame_underwater = (props: Props) => {
+export const Frame_underwater = () => {
 
     return(
         <>
@@ -209,7 +203,7 @@ export const Frame_underwater = (props: Props) => {
     )
 }
 
-export const Frame_space = (props: Props) => {
+export const Frame_space = () => {
 
     return(
 
@@ -301,7 +295,7 @@ export const Frame_space = (props: Props) => {
     )
 }
 
-export const Frame_space2 = (props: Props) => {
+export const Frame_space2 = () => {
 
     return (
         <>
@@ -345,7 +339,7 @@ export const Frame_space2 = (props: Props) => {
     )
 }
 
-export const Frame_desert = (props: Props) =>{
+export const Frame_desert = () =>{
 
     return(
         <>

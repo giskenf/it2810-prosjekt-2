@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+/*Diverse hjelpfunksjoner for å bevege elementer i ulike elementer*/
+
 @keyframes moveBird {
     from{
         transform: translate3d(250px,0,0);
@@ -32,7 +34,7 @@
     animation-delay: 1s;
 }
 
-
+/*Ending av farge i bildet "Turtle" og "Dog"*/
 @keyframes colourChange {
     from{
         fill: #61dafb;
@@ -50,7 +52,7 @@
     animation: colourChange 15s linear infinite;
     animation-delay: 3s;
 }
-
+/*Bevegelse av sirkler som bobler i bildet Turtle*/
 @keyframes moveBubble {
     from{
         transform: translate3d(-100px,-250px,0);
@@ -66,7 +68,6 @@
 
 #Frame2{
     animation: colourChange 15s linear infinite;
-    animation-delay: 3s;
 }
 
 .bubble{
@@ -100,7 +101,7 @@
         transform-origin: center;
     }
 }
-
+/*Bevegelse av objekter i bildet "Space"*/
 .sun{
     animation: rotateObject 15s linear infinite;
 }
@@ -131,7 +132,7 @@
 .earth{
     animation: rotateObject 20s linear infinite;
 }
-
+/*Bevegelse i bildet Desert*/
 @keyframes moveTumb {
     from{
         transform: translate3d(-100px,0,0);

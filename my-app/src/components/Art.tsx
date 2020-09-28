@@ -1,21 +1,10 @@
 import React, {useContext, useState} from "react";
 import "./Art.css";
-import fox from '../svg/fox.svg'
-import frame1 from '../svg/Dogforeste.svg'
 import {GlobalContext} from "./GlobalProvider";
 import {Frame, Frame_desert, Frame_space, Frame_space2, Frame_underwater} from './SVGComponent'
 
 
-
-
-interface ArtProps{
-    id?:number;
-}
-
-
-export const Art: React.FC<ArtProps> = (props: ArtProps) => {
-
-    const id = useState(props.id)
+export const Art: React.FC = () => {
 
     const {buttonProvider} = useContext(GlobalContext)
 

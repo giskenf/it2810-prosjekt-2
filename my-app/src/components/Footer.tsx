@@ -11,6 +11,8 @@ interface footerProps{
     footerID: number
 }
 
+/*Endrer tema og sang ved hjelp av context, bruker props og states for å endre tekst(poem)*/
+
 export const Footer: React.FC<footerProps> = (props: footerProps) => {
     const {themeProvider} = useContext(GlobalContext)
 

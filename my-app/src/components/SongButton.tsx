@@ -1,11 +1,11 @@
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import {GlobalContext} from "./GlobalProvider";
 
 export function SongButton(){
 
     const {songProvider} = useContext(GlobalContext)
-    /*function handleClick(e: any){
-    }*/
+
+/*Bruker funksjonen setSelectedSong for å endre sang*/
 
     return (
         <div className="radioButtonsContainer">
