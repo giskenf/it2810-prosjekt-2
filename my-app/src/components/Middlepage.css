@@ -2,6 +2,7 @@
     background-color: var(--third-turquoise-color);
     display: flex;
     flex-direction: row;
+    min-width: 320px;
 }
 @viewport {
     width: 50vw;

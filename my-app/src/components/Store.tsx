@@ -40,7 +40,7 @@ export function Store(props: any){
 
                 <button className="StoreButton"  value={"Fjern favoritt"} onClick={()=>removeFav()}>
                     Remove favorite</button>
-            </nav>
+
         </>
     )
 }
