@@ -7,29 +7,29 @@ import {Sound} from "./Sound";
 import {TabsBar} from "./TabsBar";
 import {GlobalContext} from "./GlobalProvider";
 
-interface Props {
-    id:number
+interface MiddlepageProps {
+    MiddlepageId:number
 }
-
-
-export const Middlepage: React.FC = () => {
+export const Middlepage: React.FC<MiddlepageProps> = (props:MiddlepageProps) => {
     const{themeProvider} = useContext(GlobalContext)
+    const{songProvider} = useContext(GlobalContext)
 
     return(
-    <>
+        <>
             <div className="Middlepage" id={themeProvider.selectedTheme}>
 
                 <div className="Picture">
                     <Art/>
                 </div>
-
                 <div className="Kol2">
                     <div className="Text"/>
-                        <Poems/>
-                        <Sound/>
+                    <Poems poemID={props.MiddlepageId}/>
+
+                    <div>{songProvider.selectedSong}</div>
+                    <Sound/>
                 </div>
             </div>
-    </>
+        </>
     );
 
 };
