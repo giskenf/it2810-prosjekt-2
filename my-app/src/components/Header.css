@@ -3,6 +3,8 @@
     background-color: var(--sec-orange-color);
     padding: 0 50px;
     color: white;
+    display: flex;
+    flex-direction: row;
 }
 .Background#nightTheme{
     background-image: url("../svg/night_sky.jpg");
@@ -17,8 +19,7 @@
 .NavArea{
     margin: 0;
     padding: 50px 0;
-    display: flex;
-    flex-direction: row;
+
 }
 
 .Nav{

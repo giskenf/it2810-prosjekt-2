@@ -18,7 +18,9 @@ export function Store(props: any){
         if(item == null){
             window.alert("Du har ikke valgt en favoritt!");
         }
-        buttonProvider.setSelectedOption(Number(item));
+        else{
+            buttonProvider.setSelectedOption(Number(item));
+        }
         setValue2(false);
         }
 
@@ -29,18 +31,16 @@ export function Store(props: any){
 
     return(
         <>
-            <div>
+            <nav>
                 <button className="StoreButton"  value={"Sett som favoritt"} onClick={()=>setValue(true)}>
                     Sett som favoritt</button>
-            </div>
-            <div>
+
                 <button className="StoreButton"  value={"Vis favoritt"} onClick={()=>setValue2(true)}>
                     Vis favoritt</button>
-            </div>
-            <div>
+
                 <button className="StoreButton"  value={"Fjern favoritt"} onClick={()=>removeFav()}>
                     Fjern favoritt</button>
-            </div>
+            </nav>
         </>
     )
 }

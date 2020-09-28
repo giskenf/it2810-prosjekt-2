@@ -12,12 +12,12 @@ export const Header: React.FC = () => {
        <>
            <div className = "Background" id={themeProvider.selectedTheme}>
                <div className = "NavArea">
-                    <a className = "Logo" >Tittel</a>
+                   {/*<a className = "Logo" >Tittel</a>
                     <div className="break"></div>
                     <nav className="Nav">
-                        <TabsBar/>
-                        <Store/>
-                    </nav>
+                    </nav>*/}
+                   <TabsBar/>
+                   <Store/>
                </div>
            </div>
        </>

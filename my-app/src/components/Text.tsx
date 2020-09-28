@@ -49,9 +49,9 @@ export const usePoetryDB = (props:poemsPros) => {
 
         fetch('https://poetrydb.org/author,title/Shakespeare;Sonnet')
             .then(response => response.json())
-            .then(response => response.forEach((poem: any) => setResult({status: 'loaded', payload: poem.lines})))
+            .then(response => response.forEach((poem: any) => setResult({status: 'loaded', payload: poem.lines[0]})))
             .catch(error => setResult({ status: 'error', error }));
-    }, []);
+    }, [props.poemID]);
     console.log(result)
     return result;
 
@@ -73,7 +73,7 @@ export const getList: React.FC<poemsPros> = (props:poemsPros) => {
 export const Poems: React.FC<poemsPros> = (props:poemsPros) => {
 
     const service = usePoetryDB(props)
-    console.log(Object.values(service)[1])
+
     return(
         <div>
             {props.poemID}

@@ -35,9 +35,13 @@
         flex-direction: column;
         flex-wrap: wrap;
         background-color: white;
+        align-content: center;
     }
     .svg{
         max-height: 305px;
+        min-width: 250px;
+        justify-self: center;
+        align-self: center;
     }
 }
 
