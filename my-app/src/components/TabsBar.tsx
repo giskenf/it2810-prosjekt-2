@@ -2,6 +2,7 @@ import React, {useState, useContext, useEffect} from "react";
 import './TabsBar.css';
 import {GlobalContext} from "./GlobalProvider";
 
+/*Inneholder knappene i Header som vha. context viser de ulike kunstverkene*/
 
 export function TabsBar(){
     const {buttonProvider} = useContext(GlobalContext);

@@ -2,6 +2,11 @@ import React, {useState, useContext, useEffect} from "react";
 import './TabsBar.css';
 import {GlobalContext} from "./GlobalProvider";
 
+/*Logcal storage brukes til å lagre et kunstverk som favoritt.
+* Ved refresh av siden vil det lagrede bildet forbli favoritt, med mindre man manuelt velger å fjerne den.
+* Use states er brukt for å sjekke om knappen for å velge favoritt er trykket på.
+* Dersom et bilde ikke er valgt som favoritt vil det vises en feilmelding */
+
 export function Store(props: any){
     const {buttonProvider} = useContext(GlobalContext);
     const [value, setValue] = useState(false);

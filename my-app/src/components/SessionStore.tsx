@@ -2,6 +2,11 @@ import React, {useState, useContext, useEffect} from "react";
 import './Footer.css';
 import {GlobalContext} from "./GlobalProvider";
 
+/*Session storage brukes til å midlertidig lagre en kombinasjon av side-tema og sang.
+* Ved refresh av siden vil den lagrede kobinasjonen nullstilles.
+* Use states er brukt for å sjekke om knappen for å velge kombinasjon er trykket på
+* Dersom en kombinasjon ikke er valgt vil det vises en feilmelding */
+
 export function SessionStore(props: any){
     const {themeProvider} = useContext(GlobalContext);
     const {songProvider} = useContext(GlobalContext);
