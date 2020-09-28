@@ -33,13 +33,13 @@ export function Store(props: any){
         <>
             <nav>
                 <button className="StoreButton"  value={"Sett som favoritt"} onClick={()=>setValue(true)}>
-                    Sett som favoritt</button>
+                    Set as favorite</button>
 
                 <button className="StoreButton"  value={"Vis favoritt"} onClick={()=>setValue2(true)}>
-                    Vis favoritt</button>
+                    Show favorite</button>
 
                 <button className="StoreButton"  value={"Fjern favoritt"} onClick={()=>removeFav()}>
-                    Fjern favoritt</button>
+                    Remove favorite</button>
             </nav>
         </>
     )

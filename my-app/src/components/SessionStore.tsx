@@ -36,13 +36,13 @@ export function SessionStore(props: any){
     return(
         <>
             <div>
-                <button className="buttons"  onClick={()=>setValue(true)}>Large kombinasjon</button>
+                <button className="buttons"  onClick={()=>setValue(true)}>Save combo</button>
             </div>
             <div>
-                <button className="buttons"  onClick={()=>setValue2(true)}>Vise kombinasjon</button>
+                <button className="buttons"  onClick={()=>setValue2(true)}>Show combo</button>
             </div>
             <div>
-                <button className="buttons"  onClick={()=>removeStorage()}>Slett kombinasjon</button>
+                <button className="buttons"  onClick={()=>removeStorage()}>Delete combo</button>
             </div>
         </>
     )

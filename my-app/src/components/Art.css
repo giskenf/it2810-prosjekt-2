@@ -1,6 +1,7 @@
 .pictures{
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 
 @keyframes moveBird {

@@ -16,6 +16,9 @@ export const Footer: React.FC<footerProps> = (props: footerProps) => {
     return (
         <>
             <div className = "BackgroundFooter" id={themeProvider.selectedTheme}>
+                <div>Choose a theme/song combination
+                    <SessionStore/>
+                </div>
                 <div >Choose theme
                     <ThemeButton/>
                 </div>
@@ -24,9 +27,6 @@ export const Footer: React.FC<footerProps> = (props: footerProps) => {
                 </div>
                 <div>Choose poem
                     <Button changePoem={props.changePoem}/>
-                </div>
-                <div>Choose combination
-                    <SessionStore/>
                 </div>
             </div>
         </>
