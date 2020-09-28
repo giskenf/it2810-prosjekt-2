@@ -1,0 +1,50 @@
+.Middlepage {
+    background-color: #a5ecd7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Kol2{
+    text-align: center;
+}
+
+.svg{
+    width: 40vw;
+    align-self: center;
+}
+
+
+/*For mobilskjerm*/
+@media only screen and (max-width: 600px) {
+    .Middlepage {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: white;
+        align-content: center;
+        min-width: 320px;
+    }
+
+    .svg{
+        max-height: 305px;
+        min-width: 310px;
+        justify-self: center;
+        align-self: center;
+        width: 100vw;
+    }
+}
+
+/*Hvert "Theme" har en id. Endrer bakgrunnsbildet etter id'en til klassen Middlepage */
+
+.Middlepage#nightTheme{
+    background-color: #1a1a2e;
+    color: white;
+}
+.Middlepage#jungleTheme{
+    background-color: #c4fb6d;;
+}
+.Middlepage#dayTheme{
+    background-color: white;
+}

@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  " ",
+  <div
+    className="BackgroundFooter"
+    id={1}
+  >
+    <div>
+      Choose a theme/song combination
+      <div
+        className="buttonContainer"
+      >
+        <button
+          onClick={[Function]}
+        >
+          Save combo
+        </button>
+      </div>
+      <div
+        className="buttonContainer"
+      >
+        <button
+          onClick={[Function]}
+        >
+          Show combo
+        </button>
+      </div>
+      <div
+        className="buttonContainer"
+      >
+        <button
+          onClick={[Function]}
+        >
+          Delete combo
+        </button>
+      </div>
+    </div>
+    <div>
+      Choose theme
+      <div
+        className="radioButtonsContainer"
+      >
+        <div
+          className="radioButtons"
+        >
+          <div>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+            />
+            Night
+          </div>
+          <div>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+            />
+            Day
+          </div>
+          <div>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+            />
+            Jungle
+          </div>
+          <button
+            onClick={[Function]}
+          >
+            Reset 
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      Choose song
+      <div
+        className="radioButtonsContainer"
+      >
+        <div
+          className="radioButtons"
+        >
+          <div>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+            />
+            Electronica
+          </div>
+          <div>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+            />
+            Piano
+          </div>
+          <div>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+            />
+            Rock
+          </div>
+          <button
+            onClick={[Function]}
+          >
+            Reset 
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      Choose poem
+      <div
+        className="radioButtonsContainer"
+      >
+        <div
+          className="radioButtons"
+        >
+          <div>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+            />
+            Zima blue
+          </div>
+          <div>
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="radio"
+            />
+            Orchestrate
+          </div>
+          <div>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+            />
+            Farquad
+          </div>
+          <button
+            onClick={[Function]}
+          >
+            Random poem 
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  " ",
+]
+`;

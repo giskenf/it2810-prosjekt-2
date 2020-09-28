@@ -1,0 +1,55 @@
+.BackgroundFooter{
+    margin: 0;
+    background-color: #333;
+    padding: 20px 20px;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.BackgroundFooter#nightTheme{
+    background-color: #16213e;
+}
+.BackgroundFooter#jungleTheme{
+    background-image: url("../svg/jungle.jpg");
+    color: black;
+}
+.BackgroundFooter#dayTheme{
+    background-color: #51adcf;
+}
+
+.radioButtonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.radioButtons {
+    margin: 1%;
+    display: grid;
+    flex: 1;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-self: stretch;
+    justify-self: stretch;
+    min-width: 100px;
+    color: white;
+    font-family: "Candara Light";
+}
+button{
+    background-color: #0278ae;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-tiny);
+    border: none;
+    padding: 10px 10px 0 10px;
+    margin: 3px auto 3px auto;
+    height: 50px;
+    min-width: 125px;
+}
+
+.buttonContainer {
+    display: flex;
+}
+
+
+
