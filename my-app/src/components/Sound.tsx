@@ -6,8 +6,6 @@ export const Sound = () => {
 
     return(
         <>
-            <div className="Sound">Sound
-            </div>
             <audio src={id} controls preload='auto'/>
         </>
     );

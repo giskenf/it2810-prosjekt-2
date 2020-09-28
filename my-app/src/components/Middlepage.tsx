@@ -22,10 +22,9 @@ export const Middlepage: React.FC<MiddlepageProps> = (props:MiddlepageProps) => 
                     <Art/>
                 </div>
                 <div className="Kol2">
-                    <div className="Text"/>
                     <Poems poemID={props.MiddlepageId}/>
 
-                    <div>{songProvider.selectedSong}</div>
+                    <h4>{songProvider.selectedSong}</h4>
                     <Sound/>
                 </div>
             </div>

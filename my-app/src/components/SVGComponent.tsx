@@ -17,7 +17,6 @@ export const Frame = (props: Props) => {
     return(
 
         <>
-            <div>
                 <svg className="svg" width="100%" height="100%" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Frame1" clip-path="url(#clip0)">
                         <rect width="500" height="500" />
@@ -158,7 +157,6 @@ export const Frame = (props: Props) => {
                         </clipPath>
                     </defs>
                 </svg>
-            </div>
         </>
     );
 };
@@ -167,7 +165,6 @@ export const Frame_underwater = (props: Props) => {
 
     return(
         <>
-           <div>
                <svg className="svg" width="100%" height="100%" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                    <rect id="Frame2" width="500" height="500" fill="#6FA1ED"/>
                    <path className="bubble" id="bubble1" d="M181.5 341.5C181.5 346.425 177.071 350.5 171.5 350.5C165.929 350.5 161.5 346.425 161.5 341.5C161.5 336.575 165.929 332.5 171.5 332.5C177.071 332.5 181.5 336.575 181.5 341.5Z" fill="#6FA1ED" stroke="#696565"/>
@@ -211,7 +208,6 @@ export const Frame_underwater = (props: Props) => {
                        </clipPath>
                    </defs>
                </svg>
-           </div>
         </>
     )
 }
@@ -221,7 +217,6 @@ export const Frame_space = (props: Props) => {
     return(
 
         <>
-            <div>
                 <svg className="svg" width="100%" height="100%" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="500" height="500" fill="black"/>
                     <g className="star">
@@ -305,7 +300,6 @@ export const Frame_space = (props: Props) => {
                         </clipPath>
                     </defs>
                 </svg>
-            </div>
         </>
     )
 }
@@ -314,7 +308,6 @@ export const Frame_space2 = (props: Props) => {
 
     return (
         <>
-            <div>
                 <svg className="svg" width="auto" height="auto" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
                         <rect width="500" height="500" fill="black"/>
@@ -354,7 +347,6 @@ export const Frame_space2 = (props: Props) => {
                         </clipPath>
                     </defs>
                 </svg>
-            </div>
         </>
     )
 }
@@ -363,7 +355,6 @@ export const Frame_desert = (props: Props) =>{
 
     return(
         <>
-           <div>
                <svg className="svg" width="100%" height="100%" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                    <g  clip-path="url(#clip0)">
                        <rect width="500" height="500" fill="#B0E4FE"/>
@@ -433,8 +424,6 @@ export const Frame_desert = (props: Props) =>{
                        </clipPath>
                    </defs>
                </svg>
-
-           </div>
         </>
     )
 

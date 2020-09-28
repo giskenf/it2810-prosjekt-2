@@ -12,7 +12,7 @@ export const Lowerpage= (props: lowerpageProps) =>{
     const[selectedSong, setSelectedSong] = useState("Song")
 
     return(
-        <div>
+        <div className="Lowerpage">
             <Middlepage MiddlepageId={selectedPoem}/>
             <Footer changePoem={setSelectedPoem}/>
         </div>

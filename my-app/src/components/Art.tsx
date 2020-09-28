@@ -21,13 +21,11 @@ export const Art: React.FC<ArtProps> = (props: ArtProps) => {
 
     return(
         <>
-            <div>
                 {buttonProvider.selectedOption===1 && <Frame/>}
                 {buttonProvider.selectedOption===2 && <Frame_desert/>}
                 {buttonProvider.selectedOption===3 && <Frame_space/>}
                 {buttonProvider.selectedOption===4 && <Frame_underwater/>}
                 {buttonProvider.selectedOption===5 && <Frame_space2/>}
-            </div>
         </>
     );
 
