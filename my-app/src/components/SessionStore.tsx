@@ -25,7 +25,7 @@ export function SessionStore(props: any){
             window.alert("Du har ikke valgt en kombinasjon!");
         }
         themeProvider.setSelectedTheme(theme);
-        songProvider.setSelectedTheme(song);
+        songProvider.setSelectedSong(song);
         setValue2(false);
     }
 

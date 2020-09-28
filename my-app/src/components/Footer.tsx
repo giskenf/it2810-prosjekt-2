@@ -25,7 +25,7 @@ export const Footer: React.FC<footerProps> = (props: footerProps) => {
                 <div>Choose poem
                     <Button changePoem={props.changePoem}/>
                 </div>
-                <div>Choose kombo
+                <div>Choose combination
                     <SessionStore/>
                 </div>
             </div>
