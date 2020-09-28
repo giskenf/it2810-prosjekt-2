@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+button{
+  transition-duration: 0.4s;
+}
+button:hover{
+  /*background-color: #4CAF50;*/
+  background-color: white;
+  color: black;
+}
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -5,6 +5,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: var(--font-medium);
   margin: 0;
+  min-width: 320px;
 }
 
 :root {
