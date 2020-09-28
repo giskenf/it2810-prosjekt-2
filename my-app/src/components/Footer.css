@@ -1,7 +1,7 @@
 .BackgroundFooter{
     margin: 0;
     background-color: var(--sec-purple-color);
-    padding: 0 20px;
+    padding: 20px 20px;
     color: white;
     display: flex;
     flex-flow: row wrap;

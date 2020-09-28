@@ -5,6 +5,22 @@
     color: white;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Background#nightTheme{
+    background-image: url("../svg/night_sky.jpg");
+}
+.Background#jungleTheme{
+    background-color: greenyellow;;
+}
+.Background#dayTheme{
+    background-color: white;
+}
+
+.NavArea{
+    margin: 0;
+    padding: 50px 0;
 }
 
 /*
@@ -18,8 +34,11 @@
 }*/
 
 .Headline{
-    width: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: var(--font-huge);
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px 50px 0px;
 }
 /*.break {
     flex-basis: 100%;

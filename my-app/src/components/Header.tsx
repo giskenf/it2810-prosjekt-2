@@ -11,12 +11,9 @@ export const Header: React.FC = () => {
     return (
        <>
            <div className = "Background" id={themeProvider.selectedTheme}>
-                   {/*<a className = "Logo" >Tittel</a>
-                    <div className="break"></div>
-                    <nav className="Nav">
-                    </nav>*/}
-                   <TabsBar/>
-                   <Store/>
+               <div className = "Headline">Museum</div>
+               <TabsBar/>
+               <Store/>
            </div>
        </>
 );

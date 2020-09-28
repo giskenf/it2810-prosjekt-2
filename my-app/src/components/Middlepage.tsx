@@ -17,8 +17,7 @@ export const Middlepage: React.FC<MiddlepageProps> = (props:MiddlepageProps) => 
     return(
         <>
             <div className="Middlepage" id={themeProvider.selectedTheme}>
-
-                <div className="Picture">
+                <div className="Pictures">
                     <Art/>
                 </div>
                 <div className="Kol2">
