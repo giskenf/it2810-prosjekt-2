@@ -8,15 +8,6 @@
     height: 50vh;
 }
 
-.Middlepage#nightTheme{
-    background-image: url("../svg/night_sky.jpg");
-}
-.Middlepage#jungleTheme{
-    background-color: greenyellow;;
-}
-.Middlepage#dayTheme{
-    background-color: white;
-}
 
 .svg{
     width: 40vw;
@@ -45,3 +36,12 @@
     }
 }
 
+.Middlepage#nightTheme{
+    background-image: url("../svg/night_sky.jpg");
+}
+.Middlepage#jungleTheme{
+    background-color: greenyellow;;
+}
+.Middlepage#dayTheme{
+    background-color: white;
+}
