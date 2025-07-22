@@ -15,7 +15,7 @@
     "components": "^0.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
+    "react-scripts": "5.0.1",
     "react-svg-inline": "^2.1.1",
     "styled": "^1.0.0",
     "styled-components": "^5.2.0",
@@ -43,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "jest": "24.9.0",
+    "jest": "30.0.5",
     "react-test-renderer": "^16.13.1"
   }
 }
